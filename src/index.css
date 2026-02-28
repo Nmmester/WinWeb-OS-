@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply overflow-hidden select-none bg-black text-white antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+.mica-effect {
+  @apply backdrop-blur-2xl bg-white/10 border border-white/20 shadow-xl;
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/5 border border-white/10;
+}
+
+.window-shadow {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.taskbar-blur {
+  @apply backdrop-blur-xl bg-black/40 border-t border-white/10;
+}
+
+.start-menu-blur {
+  @apply backdrop-blur-2xl bg-black/60 border border-white/10 shadow-2xl;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

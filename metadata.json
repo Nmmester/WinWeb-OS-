@@ -1,0 +1,5 @@
+{
+  "name": "WinWeb OS",
+  "description": "A fully functional Windows-inspired desktop environment in the browser with window management and built-in apps.",
+  "requestFramePermissions": []
+}
